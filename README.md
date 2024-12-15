@@ -1,4 +1,4 @@
-# calculator
+# CALCULATOR
 SIMPLE YET POWERFUL CALCULATOR!
 
 ### A calculator is very simple to make.
