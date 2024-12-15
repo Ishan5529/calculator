@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+
+<body onclick="autoReFocus()" onload="autoFocus()">
+    <div class="page">
+        <div class="container">
+            <div class="grid1" id="g1">
+                <input type='text' id="exp_box" readonly></input>
+                <input type="text" id="input_box" oninput="numonly()" placeholder="0" onclick="none" autocomplete="off">
+            </div>
+
+            <div class="grid2">
+                <div class="opgrid1">
+                    <button id="pi" onclick="pi()">π</button>
+                    <button id="pow" onclick="operator('^')">^</button>
+                    <button id="modulus" onclick="operator('%')">mod</button>
+                </div>
+                <div class="buttons">
+                    <button id="reset" onclick="reset()">C</button>
+                    <button id="back" onclick="back()">&leftarrow;</button>
+                </div>
+            </div>
+
+            <div class="grid3">
+                <button class="digits" id="digit1" onclick="digit('digit1')">1</button>
+                <button class="digits" id="digit2" onclick="digit('digit2')">2</button>
+                <button class="digits" id="digit3" onclick="digit('digit3')">3</button>
+                <button class="digits" id="digit4" onclick="digit('digit4')">4</button>
+                <button class="digits" id="digit5" onclick="digit('digit5')">5</button>
+                <button class="digits" id="digit6" onclick="digit('digit6')">6</button>
+                <button class="digits" id="digit7" onclick="digit('digit7')">7</button>
+                <button class="digits" id="digit8" onclick="digit('digit8')">8</button>
+                <button class="digits" id="digit9" onclick="digit('digit9')">9</button>
+                <button class="digits" id="log" onclick="func('log')">ln</button>
+                <button class="digits" id="digit0" onclick="digit('digit0')">0</button>
+                <button class="digits" id="decimal" onclick="digit('decimal')">.</button>
+            </div>
+
+            <div class="grid4">
+                <button id="plus" onclick="operator('+')">+</button>
+                <button id="minus" onclick="operator('-')">-</button>
+                <button id="multiply" onclick="operator('*')">*</button>
+                <button id="equal" onclick="operator('=')">=</button>
+            </div>
+
+            <div class="grid5">
+                <button id="sin" onclick="func('sin')">sin</button>
+                <button id="cos" onclick="func('cos')">cos</button>
+                <button id="tan" onclick="func('tan')">tan</button>
+                <button id="divide" onclick="operator('/')">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

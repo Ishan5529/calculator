@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(41, 39, 39);
+    background-color: rgba(41, 39, 39, 0.7);
+    color: rgb(215, 202, 202);
+}
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 300px;
+    display: grid;
+    grid-template-areas:
+    'grid1 grid1 grid1 grid1 grid1'
+    'grid2 grid2 grid2 grid2 grid2'
+    'grid5 grid3 grid3 grid3 grid4'
+    'grid5 grid3 grid3 grid3 grid4'
+    'grid5 grid3 grid3 grid3 grid4'
+    'grid5 grid3 grid3 grid3 grid4';
+}
+
+.grid1{
+    grid-area: grid1;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    transition-duration: 0.5s;
+    color:burlywood;
+}
+#g1:hover{
+    bottom: 20px;
+    transform:scale(1.2);
+    background-color: azure;
+    color:rgb(170, 170, 170);
+}
+.grid1 input{
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding-right: 15px;
+    display: flex;
+    text-align: right;
+    font-size: 2rem;
+}
+#input_box{
+    position: relative;
+    top: 10px;
+}
+#exp_box{
+    font-size: 1rem;
+    position: relative;
+    top: 15px;
+}
+
+.grid2{
+    grid-area: grid2;
+    border: 3px solid black;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.opgrid1{
+    /* border: 3px solid black;
+    border-bottom: None;
+    border-right: None; */
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid3{
+    box-sizing: border-box;
+    grid-area: grid3;
+    border: 2px solid black;
+    border-top: 3px solid black;
+    /* border-left: 2px solid black;
+    border-right: 2px solid black; */
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.grid4{
+    grid-area: grid4;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid5{
+    grid-area: grid5;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+button{
+    opacity: 0.5;
+}
+button:hover{
+    opacity:1;
+    /* transform: scale(0.97); */
+    /* transform: rotate(180deg); */
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid rgb(91, 88, 88);
+    border-right: 2px solid rgb(91, 88, 88);
+}
+
+#equal{
+    opacity: 1;
+    background-color:azure;
+    color: black;
+    transition-duration: 0.4s;
+}
+#equal:hover{
+    background-color: cyan;
+}
+#back{
+    opacity: 1;
+    transition-duration: 0.4s;
+    background-color:bisque;
+    color: black;
+}
+#back:hover{
+    background-color: red;
+    color:azure;
+}
